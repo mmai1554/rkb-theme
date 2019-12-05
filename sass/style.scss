@@ -1,0 +1,236 @@
+/**
+Theme Name: Residenz Kubitzer Bodden
+Author: MaiNetCare GmbH
+Author URI: https://mainetcare.de
+Description: Theme für Residenz Kubitzer Bodden von MaiNetCare GmbH, basierend auf Astra Pro Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: rkb
+Template: astra
+*/
+@import "mi_mixins";
+
+$mi_color_blau_logo: #69a3cf;
+$mi_color_blau2: #2f74b8;
+$mi_color_black: #3a3a3a;
+$mi_color_darkred: #ac241a;
+
+$mi_color_gold:#c79c40;
+$mi_color_dunkelblau:#272f32;
+
+body {
+
+}
+
+
+@mixin mnciconlist($color, $code) {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    // padding-left: 1.3em;
+    margin-bottom: 1em;
+  }
+  li:before {
+    font-family: 'mnc' !important;
+    font-size: 20px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: $color;
+    content: $code;
+    display: inline-block;
+    // margin-left: -1.3em; /* same as padding-left set on li */
+    // margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+  }
+
+}
+
+.entry-content, .mi-top-bar {
+  a:hover, .fl-builder a:hover {
+    text-decoration: underline;
+  }
+}
+
+#ast-scroll-top {
+  text-decoration: none !important;
+}
+
+
+.mi-aktuelle-termine {
+  .mi-list-entry {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EEEEEE;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    h5 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mi-downloads {
+  border: 1px solid #EEEEEE;
+  border-radius: 3px;
+
+  & > div {
+    padding: 10px 20px 20px 10px;
+  }
+
+  h3, h4 {
+    background-color: $mi_color_blau_logo;
+    padding: 3px 10px;
+    color: #FFFFFF;
+  }
+
+  h3 > span, h4 > span {
+    float: right;
+  }
+
+  @include mnciconlist($mi_color_darkred, "\eadf"); // tick);
+  li.application-msword:before {
+    content: "\eae1";
+    color: $mi_color_blau2;
+  }
+
+  li.application-vnd-ms-excel:before {
+    content: "\eae2";
+    color: #2b8a2d;
+  }
+
+  //ul {
+  //  margin:0;
+  //}
+  //li {
+  //  list-style-type: none;
+  //}
+  //li {
+  //  display:table-row;
+  //  &:before {
+  //    $dim:28px;
+  //    display:table-cell;
+  //    content: ' ';
+  //    background-image: url('/wp-content/uploads/pdf-icon.svg');
+  //    background-repeat: no-repeat;
+  //    background-size: $dim $dim;
+  //    height: $dim;
+  //    width: $dim + 10px;
+  //  }
+  //}
+}
+
+.mi-ul-check {
+  @include mnciconlist($mi_color_blau_logo, "\eadf"); // tick);
+}
+
+.mi-project-archive {
+  .uabb-blog-post-content {
+    padding: 0;
+  }
+
+  img {
+    width: auto;
+  }
+
+  .uabb-post-thumbnail {
+    min-height: 190px;
+  }
+}
+
+.mi-activate-icons {
+  a:before {
+    font-family: "foundation-icons" !important;
+    font-size: 16px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    width: 20px;
+  }
+
+  a.mail:before {
+    content: "\f16d";
+  }
+
+  a.mail {
+    padding-left: 20px;
+    @include bp(mobile) {
+      display: inline-block;
+    }
+  }
+
+  a.phone:before {
+    content: "\f1f8";
+  }
+}
+
+.uabb-hotspot-item {
+  .uabb-photo-img {
+    @include bp(mobile) {
+      width: 25px !important;
+    }
+  }
+}
+
+#mimap {
+  height: 500px;
+}
+
+#markers {
+  display: none;
+  visibility: hidden;
+}
+
+// let the header win over openstreetmap (400 per default)
+.site-header {
+  z-index:410;
+}
+
+.mnc-infotext {
+  p,li {
+    font-size:22px;
+  }
+  ul {
+    margin-left:1.1em;
+  }
+}
+
+h1,h2,h3 {
+  // letter-spacing: 0.05em;
+}
+.fl-slide-bg-photo {
+  border:1px solid $mi_color_gold;
+  background-size: 90% !important;
+}
+
+.fl-content-slider-navigation .slider-prev {
+  left: 15px !important;
+}
+
+.fl-content-slider-navigation .slider-next {
+  right: 15px !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background: $mi_color_gold !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: lighten($mi_color_gold, 20%);
+}
