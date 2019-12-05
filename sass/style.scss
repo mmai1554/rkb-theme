@@ -35,7 +35,7 @@ body {
     margin-bottom: 1em;
   }
   li:before {
-    display: block;
+    display:inline-block;
     content: ' ';
     background-image: url('/wp-content/themes/rkb-theme/includes/mnc/pdf-icon.svg');
     background-size: 28px 28px;

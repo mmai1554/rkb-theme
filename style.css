@@ -39,13 +39,13 @@ Template: astra
 .mi-downloads h3 > span, .mi-downloads h4 > span { float: right; }
 .mi-downloads ul { list-style: none; padding: 0; margin: 0; }
 .mi-downloads li { margin-bottom: 1em; }
-.mi-downloads li:before { display: block; content: ' '; background-image: url("/wp-content/themes/rkb-theme/includes/mnc/pdf-icon.svg"); background-size: 28px 28px; height: 28px; width: 28px; }
+.mi-downloads li:before { display: inline-block; content: ' '; background-image: url("/wp-content/themes/rkb-theme/includes/mnc/pdf-icon.svg"); background-size: 28px 28px; height: 28px; width: 28px; }
 .mi-downloads li.application-msword:before { content: "\eae1"; color: #2f74b8; }
 .mi-downloads li.application-vnd-ms-excel:before { content: "\eae2"; color: #2b8a2d; }
 
 .mi-ul-check ul { list-style: none; padding: 0; margin: 0; }
 .mi-ul-check li { margin-bottom: 1em; }
-.mi-ul-check li:before { display: block; content: ' '; background-image: url("/wp-content/themes/rkb-theme/includes/mnc/pdf-icon.svg"); background-size: 28px 28px; height: 28px; width: 28px; }
+.mi-ul-check li:before { display: inline-block; content: ' '; background-image: url("/wp-content/themes/rkb-theme/includes/mnc/pdf-icon.svg"); background-size: 28px 28px; height: 28px; width: 28px; }
 
 .mi-project-archive .uabb-blog-post-content { padding: 0; }
 .mi-project-archive img { width: auto; }
