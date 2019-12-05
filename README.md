@@ -1,2 +1,1 @@
-# aktivregionok-theme
 # rkb-theme
