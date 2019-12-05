@@ -35,21 +35,27 @@ body {
     margin-bottom: 1em;
   }
   li:before {
-    font-family: 'mnc' !important;
-    font-size: 20px;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    color: $color;
-    content: $code;
-    display: inline-block;
-    // margin-left: -1.3em; /* same as padding-left set on li */
-    // margin-left: -1.3em; /* same as padding-left set on li */
-    width: 1.3em; /* same as padding-left set on li */
+    display: block;
+    content: ' ';
+    background-image: url('/wp-content/themes/rkb-theme/includes/mnc/pdf-icon.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+    //font-family: 'mncicons' !important;
+    //font-size: 20px;
+    //speak: none;
+    //font-style: normal;
+    //font-weight: normal;
+    //font-variant: normal;
+    //text-transform: none;
+    //line-height: 1;
+    //-webkit-font-smoothing: antialiased;
+    //color: $color;
+    //content: $code;
+    //display: inline-block;
+    //// margin-left: -1.3em; /* same as padding-left set on li */
+    //// margin-left: -1.3em; /* same as padding-left set on li */
+    //width: 1.3em; /* same as padding-left set on li */
   }
 
 }
