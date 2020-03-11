@@ -25,6 +25,10 @@ Template: astra
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
+.mnc-fg-container { border-color: #c79c40; }
+
+.mnc-fg-header { background-color: #c79c40; }
+
 .entry-content a:hover, .entry-content .fl-builder a:hover, .mi-top-bar a:hover, .mi-top-bar .fl-builder a:hover { text-decoration: underline; }
 
 #ast-scroll-top { text-decoration: none !important; }
